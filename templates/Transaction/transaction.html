@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Перевод Клиенту AsortyBank{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+    <main>
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                {{ form.sender }}
+                {{ form.recipient }}
+                {{ form.summa }}
+            </div>
+        </div>
+    </main>
+    {% else %}
+    <main>
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <h1>Пока в разработке!</h1>
+            </div>
+        </div>
+    </main>
+    {% endif %}
+{% endblock %}
