@@ -149,12 +149,16 @@ class TransactionForm(ModelForm):
         widgets = {
             'sender_phone': TextInput(attrs={
                 "class": "form-control",
+                "style": "margin: 10px;",
+                "readonly": "",
             }),
             'recipient_phone': TextInput(attrs={
                 "class": "form-control",
+                "style": "margin: 10px;",
             }),
             'summa': NumberInput(attrs={
                 "class": "form-control",
+                "style": "margin: 10px;",
             }),
         }
 

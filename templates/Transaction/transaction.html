@@ -6,9 +6,20 @@
     <main>
         <div class="album py-5 bg-body-tertiary">
             <div class="container">
-                {{ form.sender }}
-                {{ form.recipient }}
-                {{ form.summa }}
+
+                <form class="card shadow-sm text-bg-dark" method="post"
+                style="width: 1240px; border-radius: 24px; margin: 30px;"
+                    enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.sender_phone }}
+                    {{ form.recipient_phone }}
+                    {{ form.summa }}
+                    <button class="btn btn-outline-light" type="submit">
+                        Отправить
+                    </button>
+                </form>
+    <!-- style="width: 1240px; border-radius: 24px; margin: 30px;"  -->
+
             </div>
         </div>
     </main>

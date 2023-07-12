@@ -183,3 +183,108 @@ Watching for file changes with StatReloader
 Обработка представления "Index"
 Watching for file changes with StatReloader
 Обработка представления "Index"
+Watching for file changes with StatReloader
+Обработка представления "Index"
+Обработка представления "SignInUserView"
+Обработка представления "SignInUserView"
+Обработка представления "SignInUserView"
+Обработка представления "SignInUserView"
+Обработка представления "SignInUserView"
+Watching for file changes with StatReloader
+Обработка представления "Index"
+Обработка представления "SignInUserView"
+Обработка представления "SignInUserView"
+Обработка представления "Index"
+Internal Server Error: /profile/transaction
+Traceback (most recent call last):
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/views.py", line 299, in TransactionView
+    if request.user.is_authenticated():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not callable
+Internal Server Error: /profile/transaction
+Traceback (most recent call last):
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/views.py", line 299, in TransactionView
+    if request.user.is_authenticated():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not callable
+Watching for file changes with StatReloader
+Обработка представления "Index"
+Internal Server Error: /profile/transaction
+Traceback (most recent call last):
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/views.py", line 299, in TransactionView
+    if request.user.is_authenticated():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not callable
+Watching for file changes with StatReloader
+Обработка представления "Index"
+Internal Server Error: /profile/transaction
+Traceback (most recent call last):
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/views.py", line 299, in TransactionView
+    if request.user.is_authenticated():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not callable
+Internal Server Error: /profile/transaction
+Traceback (most recent call last):
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/views.py", line 299, in TransactionView
+    if request.user.is_authenticated():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not callable
+Internal Server Error: /profile/transaction
+Traceback (most recent call last):
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/views.py", line 299, in TransactionView
+    if request.user.is_authenticated():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not callable
+/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Обработка представления "Index"
+/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/forms.py changed, reloading.
+Watching for file changes with StatReloader
+Обработка представления "Index"
+Watching for file changes with StatReloader
+Обработка представления "Index"
+/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/apple/LessonITC/fromgimarsell/MySiteRestApi/main/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Обработка представления "Index"

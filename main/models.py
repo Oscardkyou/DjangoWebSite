@@ -149,7 +149,7 @@ class Profile(models.Model):
 
 
 class Transaction(models.Model):
-    sender_profile = Profile.get_by_phone(max_length=20,
+    sender_phone = models.CharField(max_length=20,
                                           verbose_name="Номер телефона отправителя")
 
     recipient_phone = models.CharField(max_length=20,

@@ -1,12 +1,20 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 from .models import (Anime, Category, Contact, ContactSlider, HomeImage,
-                     HomeRowText, Post, Profile)
+                     HomeRowText, Post, Profile, Transaction)
+
+
+@admin.register(Transaction)
+class TransactionAdmin(admin.ModelAdmin):
+    list_display = ['sender_phone', 'recipient_phone', 'summa', 'created_at']
+    list_filter = ['sender_phone', 'recipient_phone', 'summa', 'created_at']
+    search_fields = ['sender_phone', 'recipient_phone']
+    ordering = ['-created_at']
 
 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
-    list_display = ('user', 'birth_date', 'phone', 'get_image')
+    list_display = ('user', 'balance', 'birth_date', 'phone', 'get_image')
     list_filter = ('birth_date',)
     search_fields = ('user__username', 'user__email')
 
@@ -14,7 +22,7 @@ class ProfileAdmin(admin.ModelAdmin):
         if obj.image:
             return mark_safe(f'<img src="{obj.image.url}" width="150px" />')
         return 'Not image'
-    
+
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
