@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from django.forms import (DateInput, EmailInput, FileInput, ModelForm,
-                          PasswordInput, Select, Textarea, TextInput, 
+                          PasswordInput, Select, Textarea, TextInput,
                           NumberInput)
 from .models import Category, Contact, Post, Profile, Transaction
 
@@ -97,7 +97,7 @@ class ContactForm(ModelForm):
                 "style": "margin: 20px; width: 1190px;",
                 "class": "form-control",
                 "placeholder": "Name",
-            }), 
+            }),
             "email": EmailInput(attrs={
                 "style": "margin: 20px; width: 1190px;",
                 "class": "form-control",
@@ -145,16 +145,28 @@ class ProfileForm(ModelForm):
 class TransactionForm(ModelForm):
     class Meta:
         model = Transaction
-        fields = ['sender', 'recipient', 'summa']
+        fields = ['sender_phone', 'recipient_phone', 'summa']
         widgets = {
-            'sender': Select(attrs={
-
+            'sender_phone': TextInput(attrs={
+                "class": "form-control",
             }),
-            'recipient': Select(attrs={
-
+            'recipient_phone': TextInput(attrs={
+                "class": "form-control",
             }),
             'summa': NumberInput(attrs={
-                
+                "class": "form-control",
             }),
         }
-        
+
+#    def clean(self):
+#        cleaned_data = super().clean()
+#        recipient_phone = cleaned_data.get('recipient_phone')
+#        summa = cleaned_data.get('summa')
+#
+#        if recipient_phone:
+#            try:
+#                recipient_profile = Profile.objects.get(phone=recipient_phone)
+#            except Profile.DoesNotExist:
+#                pass
+#            else:
+#

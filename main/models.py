@@ -163,7 +163,11 @@ class Transaction(models.Model):
             sender_profile = Profile.objects.get(phone=self.sender_phone)
             recipient_profile = Profile.objects.get_by_phone(self.recipient_phone)
         except Profile.DoesNotExist:
-            raise Exception("Профиль отправителя или получателя не найден")
+            raise Exception("Профиль отправителя или получателя не найден & Возможно у вас нет номера телеофна!")
+        try:
+            recipient_profile = Profile.get_by_phone(self.recipient_phone)
+        except Profile.DoesNotExist:
+            raise Exception("Профиль получателя не найден")
 
         if sender_profile.balance < self.summa:
             raise Exception("Недостаточно средств на балансе отправителя")
@@ -193,7 +197,7 @@ class Transaction(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self) -> str:
-        return f"{self.sender_id} -> {self.recipient_id}"
+        return f"{self.sender_id} -> {self.recipient_phone_id}"
 
     class Meta:
         verbose_name = "Транзакция"
